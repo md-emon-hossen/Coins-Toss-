@@ -36,7 +36,7 @@ var script=document.querySelector("script");
 
 
 script.addEventListener("load",()=>{
-        
+    alert("loaded");        
         flowerBtn.addEventListener("click",()=>{
             mainToss(1);
         });
