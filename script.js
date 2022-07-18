@@ -1,5 +1,4 @@
 var coin=document.querySelector(".img");
-var notify=document.querySelector(".notify");
 var showMessege=document.querySelector(".show");
 var flowerBtn=document.querySelector(".flowerBtn");
 var manBtn=document.querySelector(".manBtn");
@@ -15,13 +14,6 @@ function toss(){
 
 
 
-
-flowerBtn.addEventListener("click",()=>{
-    mainToss(1);
-});
-manBtn.addEventListener("click",()=>{
-    mainToss(0);
-});
 
 
 function mainToss(vle){
@@ -40,12 +32,19 @@ function mainToss(vle){
 
 }
 
+var script=document.querySelector("script");
 
 
+script.addEventListener("load",()=>{
+        
+        flowerBtn.addEventListener("click",()=>{
+            mainToss(1);
+        });
+        manBtn.addEventListener("click",()=>{
+            mainToss(0);
+        });
 
-
-
-
+});
 
 
 
